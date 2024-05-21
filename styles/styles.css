@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#rhombus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    margin: 10px;
+    transition: background-color 1s, transform 0.5s;
+}
+
+#rhombus:hover{
+    background-color: blueviolet;
+    transform: scale(1.2) rotate(45deg);
+    transition-delay: 0s, 1s;    
+}
+
+.textRhombus{
+    color: white;
+    transition: transform 1s, color 1s;
+}
+
+#rhombus:hover .textRhombus{
+    transform: translate(5rem);
+    color: black;
+    transition-delay: 0s, 1s;
+}
+
+#box2{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    transition: 3s; 
+    margin: 10px;  
+}
+#rhombus:hover ~ #box2{
+    transform: rotate(360deg) translate(-30rem);
+}
+
+.button1{
+    font-size: 20px;
+    padding: 15px 30px;
+    background-color: black;
+    color: yellowgreen;
+    border-radius: 50px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    transition: 1s;
+    border: 3px solid yellowgreen; 
+    margin-left: 30px; 
+}
+
+.button1:hover{
+    letter-spacing: 3px;
+    box-shadow: rgb(93 24 220) 0px 10px 39px 0px;
+    transform: scale(1.2);
+    background-color: yellowgreen;
+    color: black;
+    border: 3px solid black;
+    font-weight: bold;
+}
+
+.card{
+    margin: 50px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    height: 366px; 
+    box-shadow: 0px 0px 10px 5px rgb(158, 157, 157);
+}
+
+img{
+    width: 180px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 5px rgb(179, 178, 178); 
+}
+
+.titleCard{
+    font-size: 30px;
+}
+
+.descriptionCard{
+    margin: 10px;
+}
+
+.sizeContent{
+    font-size: 12px;
+    color: gray;
+}
+
+.priceCard{
+    font-weight: bold;
+}
+
+.unid{
+    color: gray;
+}
+
+.cardButton{
+    border-radius: 50px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 2px solid orangered;
+    background: black;
+    color: orangered;
+}
