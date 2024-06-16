@@ -37,7 +37,7 @@ body{
 #rhombus:hover .textRhombus{
     transform: translate(5rem);
     color: black;
-    transition-delay: 0s, 1s;
+    transition-delay: 1.5s, 1s;
 }
 
 #box2{
